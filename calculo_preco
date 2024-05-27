@@ -1,0 +1,16 @@
+preco_original = float(input("Insira preço original do produto: "))
+
+#verificar qual metodo de pagamento
+metodo = int(input("Selecione método de pagamento:\n1- À vista em dinheiro ou cheque\n2- À vista no cartão de crédito\n3- Em duas vezes, preço normal de etiqueta sem juros\n4- Em três vezes\n"))
+
+if metodo == 1:
+  preco_original -= preco_original * 0.1
+  print(f"{preco_original}")
+elif metodo == 2:
+  preco_original -= preco_original *0.05
+  print(f"{preco_original}")
+elif metodo == 3:
+  print(f"{preco_original}")
+elif metodo == 4:
+  preco_original += preco_original *0.05
+  print(f"{preco_original}")
