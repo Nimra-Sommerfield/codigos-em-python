@@ -1,0 +1,11 @@
+java = 52000
+python = 74000
+anos = 0
+#uma estrutura de repetição que aumenta o ano aos poucos é o ideal
+
+while java < python: 
+  java += java * 0.07
+  python += python * 0.05
+  anos += 1
+
+print(f"{anos}")
